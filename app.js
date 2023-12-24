@@ -10,6 +10,7 @@ const qlsach = require("./routers/qlsach");
 const dlsach = require("./routers/dlsach");
 const nhapsach = require("./routers/nhapsach");
 const bansach = require("./routers/bansach");
+const timkiemsach = require("./routers/timkiemsach");
 
 if (process.env.NODE_ENV === "development") {
 	app.use(morgan("dev"));
@@ -35,6 +36,7 @@ app.use("/qlsach", qlsach);
 app.use("/dlsach", dlsach);
 app.use("/nhapsach", nhapsach);
 app.use("/bansach", bansach);
+app.use("/timkiemsach", timkiemsach);
 
 app.get("/", (req, res) => {
 	res.render("home");
