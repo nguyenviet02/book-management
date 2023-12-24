@@ -32,7 +32,6 @@
 #section2 .top {
   width: 100%;
   display: flex;
-  align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -41,6 +40,10 @@
   width: 100%;
   max-height: 20rem;
   overflow: auto;
+}
+
+.table thead th {
+  vertical-align: middle !important;
 }
 
 .action .form-control {
@@ -71,6 +74,7 @@
   font-style: normal;
   line-height: normal;
   cursor: pointer;
+	border-radius: 3rem;
 }
 
 .bottom {
@@ -98,6 +102,7 @@
   font-style: normal;
   line-height: normal;
   cursor: pointer;
+	border-radius: 3rem;
 }
 
 .form-select {
@@ -113,4 +118,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.table button {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }

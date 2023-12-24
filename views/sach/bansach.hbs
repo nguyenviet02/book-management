@@ -34,18 +34,29 @@
       <div id='section2'>
         <div class='top'>
           <div class='table-top'>
-            <table class='table table-bordered'>
+            <table class='table table-bordered align-middle'>
               <thead>
                 <tr>
-                  <th scope='col'>Mã nhà xuất bản</th>
-                  <th scope='col'>Tên nhà xuất bản</th>
-                  <th scope='col'>Thực hiên</th>
+                  <th scope='col'>Mã Sách</th>
+                  <th class='text-center' scope='col'>Tên Sách</th>
+                  <th scope='col'>Số lượng</th>
+                  <th scope='col'>Đơn giá nhập</th>
+                  <th scope='col'>Tổng tiền</th>
+                  <th scope='col'>Thực hiện</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope='row'>1</th>
-                  <td>Mark</td>
+                  <td>Tài ăn nói của người đàn ông</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>
+                    <button>
+                      <img src='/img/icon-bin.svg' alt='' />
+                    </button>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -61,8 +72,9 @@
           <table class='table table-bordered'>
             <thead>
               <tr>
-                <th scope='col'>Mã hóa đón</th>
-                <th scope='col'>Ngày nhập</th>
+                <th scope='col'>Mã hóa đơn</th>
+                <th scope='col'>Mã khách hàng</th>
+                <th scope='col'>Ngày lập</th>
                 <th scope='col'>Tổng tiền</th>
                 <th scope='col'>Thực hiện</th>
               </tr>
@@ -70,31 +82,23 @@
             <tbody>
               <tr>
                 <th scope='row'>1</th>
+                <td>0000</td>
                 <td>7/12/2023 12:00:00 AM</td>
                 <td>293000</td>
                 <td>
                   <button>
-
-                    <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-archive' viewBox='0 0 16 16'>
-                      <path
-                        d='M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5'
-                      />
-                    </svg>
+                    <img src='/img/icon-bin.svg' alt='' />
                   </button>
                 </td>
               </tr>
               <tr>
                 <th scope='row'>1</th>
+                <td>0000</td>
                 <td>7/12/2023 12:00:00 AM</td>
                 <td>293000</td>
                 <td>
                   <button>
-
-                    <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-archive' viewBox='0 0 16 16'>
-                      <path
-                        d='M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5'
-                      />
-                    </svg>
+                    <img src='/img/icon-bin.svg' alt='' />
                   </button>
                 </td>
               </tr>
@@ -102,14 +106,14 @@
           </table>
           <div class='btn-list'>
             <select id='bookCate' class='form-select' aria-label='Chọn thể loại'>
-              <option selected>Chọn thể loại</option>
+              <option selected>Chọn khách hàng</option>
               <option value='1'>One</option>
               <option value='2'>Two</option>
               <option value='3'>Three</option>
             </select>
-            <button type='button' class='btn btn-primary'>Tạo phiếu nhập mới</button>
-            <button type='button' class='btn btn-secondary'>Nhập sách</button>
-            <button type='button' class='btn btn-success'>Lưu phiếu nhập</button>
+            <button type='button' class='btn btn-primary'>Tạo hóa đơn mới</button>
+            <button type='button' class='btn btn-secondary'>Nhập hóa đơn</button>
+            <button type='button' class='btn btn-success'>Lưu hóa đơn</button>
           </div>
         </div>
       </div>

@@ -105,3 +105,9 @@
 	max-height: 30rem;
 	overflow-y: auto;
 }
+
+.table button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
