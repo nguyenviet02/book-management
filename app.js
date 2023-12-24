@@ -8,6 +8,7 @@ const app = express();
 
 const qlsach = require("./routers/qlsach");
 const dlsach = require("./routers/dlsach");
+const nhapsach = require("./routers/nhapsach");
 
 if (process.env.NODE_ENV === "development") {
 	app.use(morgan("dev"));
@@ -31,6 +32,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // routers
 app.use("/qlsach", qlsach);
 app.use("/dlsach", dlsach);
+app.use("/nhapsach", nhapsach);
 
 app.get("/", (req, res) => {
 	res.render("home");
