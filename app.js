@@ -7,6 +7,7 @@ dotenv.config({ path: "./config.env" });
 const app = express();
 
 const qlsach = require("./routers/qlsach");
+const dlsach = require("./routers/dlsach");
 
 if (process.env.NODE_ENV === "development") {
 	app.use(morgan("dev"));
@@ -29,6 +30,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // routers
 app.use("/qlsach", qlsach);
+app.use("/dlsach", dlsach);
 
 app.get("/", (req, res) => {
 	res.render("home");
